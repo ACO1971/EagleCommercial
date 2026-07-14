@@ -73,14 +73,20 @@ function icon(ctx, name, className = 'icon') {
 
 function renderHeader(ctx) {
   const navKeys = ['company', 'capabilities', 'sectors', 'engineering', 'support', 'group'];
+  const companyAnchor = ctx.lang === 'es' ? 'compania' : 'company';
+  const navHref = (key) => key === 'company' ? `${href(ctx, 'home')}#${companyAnchor}` : href(ctx, key);
   const navLinks = navKeys.map((key) => {
-    const current = ctx.routeKey === key ? ' aria-current="page"' : '';
-    return `<a class="nav-link" href="${href(ctx, key)}"${current}>${esc(routes[ctx.lang][key].label)}</a>`;
+    const current = key === 'company'
+      ? (ctx.routeKey === 'home' ? ' aria-current="location"' : '')
+      : (ctx.routeKey === key ? ' aria-current="page"' : '');
+    return `<a class="nav-link" href="${navHref(key)}"${current}>${esc(routes[ctx.lang][key].label)}</a>`;
   }).join('');
 
   const mobileLinks = [...navKeys, 'contact'].map((key) => {
-    const current = ctx.routeKey === key ? ' aria-current="page"' : '';
-    return `<a class="mobile-nav-link" href="${href(ctx, key)}"${current}>${esc(routes[ctx.lang][key].label)}${icon(ctx, 'arrow', 'icon icon--xs')}</a>`;
+    const current = key === 'company'
+      ? (ctx.routeKey === 'home' ? ' aria-current="location"' : '')
+      : (ctx.routeKey === key ? ' aria-current="page"' : '');
+    return `<a class="mobile-nav-link" href="${navHref(key)}"${current}>${esc(routes[ctx.lang][key].label)}${icon(ctx, 'arrow', 'icon icon--xs')}</a>`;
   }).join('');
 
   const alternate = ctx.lang === 'es' ? 'en' : 'es';
@@ -130,7 +136,7 @@ function renderFooter(ctx) {
         <div>
           <h2>${ctx.lang === 'es' ? 'Navegación' : 'Navigation'}</h2>
           <ul class="footer-links">
-            <li><a href="${href(ctx, 'company')}">${esc(routes[ctx.lang].company.label)}</a></li>
+            <li><a href="${href(ctx, 'home')}#${ctx.lang === 'es' ? 'compania' : 'company'}">${esc(routes[ctx.lang].company.label)}</a></li>
             <li><a href="${href(ctx, 'engineering')}">${esc(routes[ctx.lang].engineering.label)}</a></li>
             <li><a href="${href(ctx, 'support')}">${esc(routes[ctx.lang].support.label)}</a></li>
             <li><a href="${href(ctx, 'group')}">${esc(routes[ctx.lang].group.label)}</a></li>
@@ -321,10 +327,10 @@ function renderHome(ctx) {
         </div>
       </section>
 
-      <section class="section section--light">
+      <section id="${ctx.lang === 'es' ? 'compania' : 'company'}" class="section section--light company-intro-section">
         <div class="shell intro-grid">
           <div>${renderSectionHeading(p.introEyebrow, p.introTitle)}</div>
-          <div class="intro-copy" data-reveal><p>${esc(p.introText)}</p><p>${esc(p.introText2)}</p><a class="text-link text-link--dark" href="${href(ctx, 'company')}">${esc(ctx.t.learnMore)}${icon(ctx, 'arrow', 'icon icon--xs')}</a></div>
+          <div class="intro-copy" data-reveal><p>${esc(p.introText)}</p><p>${esc(p.introText2)}</p><a class="text-link text-link--dark" href="${href(ctx, 'capabilities')}">${ctx.lang === 'es' ? 'Explorar capacidades' : 'Explore capabilities'}${icon(ctx, 'arrow', 'icon icon--xs')}</a></div>
         </div>
       </section>
 
@@ -418,22 +424,24 @@ function renderHome(ctx) {
 
 function renderCompany(ctx) {
   const p = ctx.p.company;
+  const anchor = ctx.lang === 'es' ? 'compania' : 'company';
+  const target = `${href(ctx, 'home')}#${anchor}`;
+  const message = ctx.lang === 'es'
+    ? 'La información corporativa ahora está integrada en la página de Inicio.'
+    : 'Company information is now integrated into the Home page.';
+  const button = ctx.lang === 'es' ? 'Ver información de la compañía' : 'View company information';
   return `<main id="main-content">
-    ${renderPageHero(ctx, p.eyebrow, p.title, p.lead, 'visual-command.svg')}
-    <section class="section section--light"><div class="shell split-layout">
-      <div data-reveal><p class="eyebrow">Eagle Commercial S.A.</p><h2>${esc(p.thesisTitle)}</h2><p class="large-copy">${esc(p.thesisText)}</p><p>${esc(p.thesisText2)}</p></div>
-      <div class="image-panel" data-reveal><img src="${asset(ctx, 'assets/images/visual-infrastructure.svg')}" alt="" width="900" height="650" loading="lazy"><div class="image-panel__caption"><span>01</span>${ctx.lang === 'es' ? 'Necesidad' : 'Need'}<span>→</span>${ctx.lang === 'es' ? 'Arquitectura' : 'Architecture'}<span>→</span>${ctx.lang === 'es' ? 'Capacidad' : 'Capability'}</div></div>
-    </div></section>
-    <section class="section section--soft"><div class="shell">
-      ${renderSectionHeading(ctx.lang === 'es' ? 'Cómo trabajamos' : 'How we work', p.principlesTitle)}
-      <div class="principle-grid">${p.principles.map((item, index) => `<article class="principle-card" data-reveal><span>0${index + 1}</span><h3>${esc(item.title)}</h3><p>${esc(item.text)}</p></article>`).join('')}</div>
-    </div></section>
-    <section class="section section--dark"><div class="shell split-layout split-layout--reverse">
-      <div class="image-panel image-panel--dark" data-reveal><img src="${asset(ctx, 'assets/images/visual-logistics.svg')}" alt="" width="900" height="650" loading="lazy"></div>
-      <div data-reveal><p class="eyebrow">${esc(p.modelEyebrow)}</p><h2>${esc(p.modelTitle)}</h2><p class="large-copy">${esc(p.modelText)}</p><div class="mini-list"><div>${icon(ctx, 'globe')}<span>${ctx.lang === 'es' ? 'Proveedores especializados' : 'Specialized suppliers'}</span></div><div>${icon(ctx, 'nodes')}<span>${ctx.lang === 'es' ? 'Integración local' : 'Local integration'}</span></div><div>${icon(ctx, 'life')}<span>${ctx.lang === 'es' ? 'Acompañamiento continuo' : 'Ongoing support'}</span></div></div></div>
-    </div></section>
-    <section class="section section--light"><div class="shell centered-copy" data-reveal><p class="eyebrow">${ctx.lang === 'es' ? 'Organizaciones' : 'Organizations'}</p><h2>${esc(p.audienceTitle)}</h2><p>${esc(p.audienceText)}</p><a class="button button--outline-dark" href="${href(ctx, 'sectors')}">${ctx.lang === 'es' ? 'Explorar sectores' : 'Explore sectors'}${icon(ctx, 'arrow', 'icon icon--xs')}</a></div></section>
-    ${renderCta(ctx, p.finalTitle, p.finalText, ctx.lang === 'es' ? 'Ver metodología' : 'View methodology', false).replace(href(ctx, 'contact'), href(ctx, 'engineering'))}
+    <section class="page-hero page-hero--compact company-redirect">
+      <div class="page-hero__glow" aria-hidden="true"></div>
+      <div class="shell centered-copy" data-reveal>
+        <p class="eyebrow">${esc(p.eyebrow)}</p>
+        <h1>${esc(p.title)}</h1>
+        <p class="page-hero__lead">${esc(message)}</p>
+        <a class="button button--gold" href="${target}">${esc(button)}${icon(ctx, 'arrow', 'icon icon--xs')}</a>
+      </div>
+    </section>
+    <script>window.location.replace(${JSON.stringify(target)});</script>
+    <noscript><meta http-equiv="refresh" content="0; url=${target}"></noscript>
   </main>`;
 }
 
@@ -562,7 +570,7 @@ function renderLayout(ctx, body) {
   const currentUrl = canonicalPath(ctx.lang, ctx.routeKey);
   const alternateLang = ctx.lang === 'es' ? 'en' : 'es';
   const alternateUrl = canonicalPath(alternateLang, ctx.routeKey);
-  const robots = ctx.routeKey === 'access' ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+  const robots = ctx.routeKey === 'access' ? 'noindex, nofollow' : ctx.routeKey === 'company' ? 'noindex, follow' : 'index, follow, max-image-preview:large';
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -626,7 +634,7 @@ function render404() {
 }
 
 function renderSitemap() {
-  const excluded = new Set(['access']);
+  const excluded = new Set(['access', 'company']);
   const urls = [];
   for (const lang of ['es', 'en']) {
     for (const routeKey of Object.keys(routes[lang])) {

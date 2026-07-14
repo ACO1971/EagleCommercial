@@ -113,7 +113,7 @@ for (const required of [
 
 const sitemap = await readFile(path.join(dist, 'sitemap.xml'), 'utf8').catch(() => '');
 const urlCount = (sitemap.match(/<url>/g) || []).length;
-if (urlCount !== 20) warnings.push(`El sitemap contiene ${urlCount} URLs; se esperaban 20 (sin áreas autorizadas).`);
+if (urlCount !== 18) warnings.push(`El sitemap contiene ${urlCount} URLs; se esperaban 18 (sin áreas autorizadas ni páginas de compañía redirigidas).`);
 
 if (warnings.length) {
   console.warn('\nAdvertencias:');
