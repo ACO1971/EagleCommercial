@@ -21,7 +21,7 @@ export const pages = {
       partnerLead: 'La página pública puede mostrar alianzas y líneas de solución de forma institucional, mientras el detalle técnico y comercial se comparte bajo validación del requerimiento.',
       clientsEyebrow: 'Experiencia institucional',
       clientsTitle: 'Experiencia que respalda nuestro trabajo',
-      clientsLead: 'A lo largo de nuestra trayectoria, Eagle Commercial ha participado en proyectos y procesos con diferentes entidades del sector público y privado, aportando soluciones tecnológicas especializadas y acompañamiento técnico.',
+      clientsLead: 'Los logotipos se presentan únicamente como referencia de experiencia institucional y no implican respaldo, asociación o representación oficial por parte de las entidades mencionadas.',
       clientsNote: 'Antes de publicar logotipos institucionales o de terceros, recomendamos validar autorización de uso y lineamientos de marca.',
       capabilityEyebrow: 'Capacidades',
       capabilityTitle: 'Tecnología articulada como un sistema.',
