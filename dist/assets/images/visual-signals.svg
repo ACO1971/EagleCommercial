@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Entorno de señales</title><desc id="desc">Visualización conceptual abstracta de señales, espectro y comunicaciones.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d1725"/><stop offset="1" stop-color="#060a11"/></linearGradient>
+    <linearGradient id="wave" x1="0" x2="1"><stop stop-color="#5dc7ed" stop-opacity="0"/><stop offset=".2" stop-color="#5dc7ed"/><stop offset=".52" stop-color="#e0bd78"/><stop offset=".82" stop-color="#5dc7ed"/><stop offset="1" stop-color="#5dc7ed" stop-opacity="0"/></linearGradient>
+    <radialGradient id="pulse"><stop stop-color="#63cdef" stop-opacity=".55"/><stop offset="1" stop-color="#63cdef" stop-opacity="0"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="650" rx="38" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#8ea0b5" stroke-opacity=".11"><path d="M72 130h756M72 200h756M72 270h756M72 340h756M72 410h756M72 480h756M72 550h756"/><path d="M142 90v500M212 90v500M282 90v500M352 90v500M422 90v500M492 90v500M562 90v500M632 90v500M702 90v500M772 90v500"/></g>
+    <path d="M72 355c38 0 45-4 61-4 27 0 22-72 48-72 26 0 22 131 47 131 28 0 28-241 57-241 28 0 28 322 58 322 28 0 25-205 54-205 29 0 28 83 55 83 28 0 25-36 53-36 28 0 25 11 54 11 29 0 28-145 57-145 29 0 28 273 58 273 27 0 27-160 55-160 28 0 26 57 54 57 27 0 25-18 51-18 22 0 26 4 53 4" stroke="url(#wave)" stroke-width="3" filter="url(#glow)"/>
+    <path d="M72 395c48-22 79 17 124 5 48-13 74-56 123-42 57 16 78 64 131 45 48-18 75-53 123-31 45 20 74 51 126 32 44-16 83-42 129-16" stroke="#62c9ef" stroke-opacity=".26"/>
+    <circle cx="451" cy="322" r="117" fill="url(#pulse)" opacity=".18"/>
+    <circle cx="451" cy="322" r="92" stroke="#64cbee" stroke-opacity=".22"/>
+    <circle cx="451" cy="322" r="62" stroke="#d7b16c" stroke-opacity=".3" stroke-dasharray="6 10"/>
+    <circle cx="451" cy="322" r="10" fill="#d8b06b" filter="url(#glow)"/>
+    <path d="M451 322 287 168M451 322l219-118M451 322l192 178M451 322 234 492" stroke="#8c9db0" stroke-opacity=".23"/>
+    <g filter="url(#glow)"><circle cx="287" cy="168" r="6" fill="#65cdf2"/><circle cx="670" cy="204" r="6" fill="#d7b06c"/><circle cx="643" cy="500" r="6" fill="#65cdf2"/><circle cx="234" cy="492" r="6" fill="#d7b06c"/></g>
+    <g fill="#0b1522" stroke="#8a9cae" stroke-opacity=".28"><rect x="118" y="104" width="139" height="52" rx="18"/><rect x="682" y="150" width="113" height="50" rx="18"/><rect x="668" y="498" width="136" height="52" rx="18"/><rect x="104" y="492" width="118" height="52" rx="18"/></g>
+    <g stroke="#dce6f0" stroke-opacity=".45"><path d="M146 130h83M708 175h61M695 524h82M130 518h66"/></g>
+  </g>
+</svg>

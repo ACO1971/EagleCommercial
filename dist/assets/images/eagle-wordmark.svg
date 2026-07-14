@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 54" role="img" aria-labelledby="title desc">
+  <title id="title">Eagle Commercial</title><desc id="desc">Identidad tipográfica provisional para la propuesta web.</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0d39b"/><stop offset="1" stop-color="#b68c4d"/></linearGradient></defs>
+  <g fill="none" stroke="url(#g)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 27c8-16 20-21 35-20-8 4-13 9-16 15 8-5 16-7 25-5-11 3-18 8-22 15 7-2 13-1 19 2-14 0-24 5-31 13 1-8-2-14-10-20Z"/>
+    <path d="M16 28c5-2 9-2 14 0M17 36c5-1 9 0 13 2" opacity=".7"/>
+  </g>
+  <text x="61" y="25" fill="#f7f8fb" font-family="Inter,Arial,sans-serif" font-size="17.5" font-weight="750" letter-spacing="2.2">EAGLE</text>
+  <text x="61" y="43" fill="#aeb6c2" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" letter-spacing="3.15">COMMERCIAL</text>
+  <circle cx="268" cy="14" r="2.2" fill="#c7a56a"/><circle cx="276" cy="14" r="2.2" fill="#62c9ee" opacity=".9"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Centro de decisión tecnológico</title><desc id="desc">Interfaz conceptual abstracta de información, redes y conocimiento situacional.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111b2a"/><stop offset="1" stop-color="#070b12"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#f1d598"/><stop offset="1" stop-color="#b38b50"/></linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#57c1e8" stop-opacity=".2"/><stop offset=".6" stop-color="#6ed5f5"/><stop offset="1" stop-color="#57c1e8" stop-opacity=".1"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="650" rx="38" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M80 110h740M80 540h740" stroke="#98a8bb" stroke-opacity=".18"/>
+    <g stroke="#8fa0b4" stroke-opacity=".12"><path d="M80 175h740M80 240h740M80 305h740M80 370h740M80 435h740M80 500h740"/><path d="M155 110v430M230 110v430M305 110v430M380 110v430M455 110v430M530 110v430M605 110v430M680 110v430M755 110v430"/></g>
+    <rect x="97" y="132" width="315" height="260" rx="26" fill="#0b1320" stroke="#8fa0b4" stroke-opacity=".22"/>
+    <circle cx="255" cy="262" r="98" stroke="#5ec8ed" stroke-opacity=".25"/>
+    <circle cx="255" cy="262" r="68" stroke="#d7b16c" stroke-opacity=".35" stroke-dasharray="7 11"/>
+    <circle cx="255" cy="262" r="32" fill="#d6ad68" fill-opacity=".13" stroke="#d6ad68"/>
+    <path d="M255 262 338 211M255 262l-74-64M255 262l35 81M255 262l-98 34" stroke="#8fa0b4" stroke-opacity=".34"/>
+    <g fill="#65ccf2" filter="url(#glow)"><circle cx="338" cy="211" r="5"/><circle cx="181" cy="198" r="5"/><circle cx="290" cy="343" r="5"/></g><circle cx="157" cy="296" r="5" fill="#d6ad68" filter="url(#glow)"/>
+
+    <rect x="438" y="132" width="365" height="122" rx="26" fill="#0b1320" stroke="#8fa0b4" stroke-opacity=".22"/>
+    <path d="M470 214c38-29 68 8 104-19s66 20 103-8 65 18 96-23" stroke="url(#cyan)" stroke-width="2.5"/>
+    <path d="M470 217h303" stroke="#7e8da0" stroke-opacity=".2"/>
+    <g fill="#d6ad68"><circle cx="574" cy="195" r="4"/><circle cx="677" cy="187" r="4"/></g>
+
+    <rect x="438" y="278" width="171" height="114" rx="24" fill="#0b1320" stroke="#8fa0b4" stroke-opacity=".22"/>
+    <rect x="632" y="278" width="171" height="114" rx="24" fill="#0b1320" stroke="#8fa0b4" stroke-opacity=".22"/>
+    <path d="M469 350h18v-20h18v-32h18v44h18v-25h18v33h20" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M668 335c20-22 42-25 62-5 11 11 22 11 39-3" stroke="#66ccee" stroke-width="2"/>
+    <circle cx="721" cy="334" r="30" stroke="#66ccee" stroke-opacity=".22"/>
+
+    <rect x="97" y="420" width="706" height="92" rx="24" fill="#0b1320" stroke="#8fa0b4" stroke-opacity=".22"/>
+    <g fill="#0f1e2d" stroke="#8092a6" stroke-opacity=".36"><rect x="128" y="450" width="107" height="30" rx="15"/><rect x="252" y="450" width="139" height="30" rx="15"/><rect x="408" y="450" width="95" height="30" rx="15"/><rect x="520" y="450" width="119" height="30" rx="15"/><rect x="656" y="450" width="116" height="30" rx="15"/></g>
+    <g stroke="#d5dfeb" stroke-opacity=".45"><path d="M150 465h60M274 465h92M430 465h50M542 465h73M678 465h70"/></g>
+    <g fill="#63cbee"><circle cx="142" cy="465" r="3"/><circle cx="266" cy="465" r="3"/><circle cx="422" cy="465" r="3"/></g><g fill="#d5ad68"><circle cx="534" cy="465" r="3"/><circle cx="670" cy="465" r="3"/></g>
+  </g>
+</svg>
