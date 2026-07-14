@@ -76,6 +76,8 @@ svg { display: block; }
 .section--dark { color: var(--text-muted); background: var(--ink-900); }
 .section--dark h2, .section--dark h3, .section--dark strong { color: var(--text-light); }
 
+.company-intro-section { scroll-margin-top: 118px; }
+
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { color: var(--text-dark); letter-spacing: -.035em; text-wrap: balance; }
 h1 { margin-bottom: 1.5rem; font-size: clamp(3rem, 6.8vw, 6.65rem); line-height: .96; font-weight: 630; }
