@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Plataformas autónomas</title><desc id="desc">Ilustración conceptual original de una plataforma aérea no tripulada y su red de operación.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101a29"/><stop offset="1" stop-color="#060a11"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bdc8d5" stop-opacity=".9"/><stop offset=".5" stop-color="#5f6f82"/><stop offset="1" stop-color="#222d3b"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#f0d18f"/><stop offset="1" stop-color="#b68d50"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="650" rx="38" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="458" cy="345" rx="290" ry="174" stroke="#8da0b5" stroke-opacity=".11"/>
+    <ellipse cx="458" cy="345" rx="215" ry="126" stroke="#65c9ef" stroke-opacity=".18" stroke-dasharray="14 16"/>
+    <path d="M169 345h578M458 171v348" stroke="#8da0b5" stroke-opacity=".09"/>
+    <path d="M458 345 212 218M458 345l262-107M458 345l202 179M458 345 221 523" stroke="#8495a8" stroke-opacity=".2"/>
+
+    <g transform="translate(454 332)">
+      <path d="M-83-18h166l35 48-62 10-18 46h-76l-18-46-62-10 35-48Z" fill="url(#metal)" fill-opacity=".5" stroke="#a9b5c2" stroke-opacity=".72"/>
+      <rect x="-56" y="-34" width="112" height="54" rx="24" fill="#111c2a" stroke="#d0ae6b" stroke-opacity=".7"/>
+      <circle cx="0" cy="-7" r="17" fill="#d2ad68" fill-opacity=".2" stroke="#d2ad68"/><circle cx="0" cy="-7" r="5" fill="#63caf0" filter="url(#glow)"/>
+      <path d="M-58-4h-105M58-4h105M-36 28l-91 62M36 28l91 62" stroke="#9daab8" stroke-width="5"/>
+      <g stroke="#69798b" stroke-width="3"><ellipse cx="-175" cy="-4" rx="48" ry="13"/><ellipse cx="175" cy="-4" rx="48" ry="13"/><ellipse cx="-138" cy="98" rx="44" ry="12"/><ellipse cx="138" cy="98" rx="44" ry="12"/></g>
+      <g fill="#d3ad68"><circle cx="-175" cy="-4" r="6"/><circle cx="175" cy="-4" r="6"/></g><g fill="#64cbed"><circle cx="-138" cy="98" r="6"/><circle cx="138" cy="98" r="6"/></g>
+      <path d="M-28 86h56l-8 45h-40l-8-45Z" fill="#0d1622" stroke="#8fa0b3"/><path d="M-14 104h28" stroke="url(#gold)" stroke-width="3"/>
+    </g>
+
+    <g filter="url(#glow)"><circle cx="212" cy="218" r="6" fill="#65cdf2"/><circle cx="720" cy="238" r="6" fill="#d6af6b"/><circle cx="660" cy="524" r="6" fill="#65cdf2"/><circle cx="221" cy="523" r="6" fill="#d6af6b"/></g>
+    <g fill="#0c1623" stroke="#8093a7" stroke-opacity=".32"><rect x="108" y="166" width="125" height="58" rx="19"/><rect x="700" y="184" width="112" height="58" rx="19"/><rect x="645" y="516" width="157" height="58" rx="19"/><rect x="101" y="507" width="139" height="58" rx="19"/></g>
+    <g stroke="#d9e4ee" stroke-opacity=".43"><path d="M134 194h72M725 212h63M671 544h105M128 535h86"/></g>
+  </g>
+</svg>

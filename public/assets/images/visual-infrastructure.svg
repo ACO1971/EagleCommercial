@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+  <title id="title">Infraestructura conectada</title><desc id="desc">Ilustración abstracta original de una ciudad, energía, transporte y telecomunicaciones conectadas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111b2a"/><stop offset="1" stop-color="#070b12"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#f1d496"/><stop offset="1" stop-color="#b4874b"/></linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#60c9ee"/><stop offset="1" stop-color="#60c9ee" stop-opacity=".12"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="650" rx="38" fill="url(#bg)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M78 515h744" stroke="#8c9eb1" stroke-opacity=".24"/>
+    <path d="M142 515V318h94v197M252 515V238h103v277M371 515V296h126v219M512 515V184h109v331M638 515V275h121v240" fill="#0b1521" stroke="#8798aa" stroke-opacity=".32"/>
+    <g stroke="#93a4b7" stroke-opacity=".26"><path d="M166 350h47M166 386h47M166 422h47M166 458h47M279 276h50M279 312h50M279 348h50M279 384h50M279 420h50M279 456h50M401 334h66M401 372h66M401 410h66M401 448h66M542 222h49M542 260h49M542 298h49M542 336h49M542 374h49M542 412h49M542 450h49M669 313h59M669 351h59M669 389h59M669 427h59M669 465h59"/></g>
+    <path d="M80 543c112-24 184-15 257-2 84 15 160 10 239-5 84-16 156-11 246 5" stroke="#65c9ee" stroke-opacity=".35"/>
+    <path d="M107 566c89-15 171-15 252-3 108 15 217 10 330-4 54-7 91-5 132 4" stroke="#d5ae69" stroke-opacity=".25"/>
+
+    <path d="M189 318 302 238M302 238l132 58M434 296l132-112M566 184l132 91" stroke="#8698ab" stroke-opacity=".32"/>
+    <g filter="url(#glow)"><circle cx="189" cy="318" r="7" fill="#65ccef"/><circle cx="302" cy="238" r="7" fill="#d7af69"/><circle cx="434" cy="296" r="7" fill="#65ccef"/><circle cx="566" cy="184" r="7" fill="#d7af69"/><circle cx="698" cy="275" r="7" fill="#65ccef"/></g>
+
+    <path d="M566 184v-57M530 127h72M544 127l22-45 22 45" stroke="url(#gold)" stroke-width="2"/>
+    <path d="M566 105c-34 9-54 24-65 43M566 105c34 9 54 24 65 43M566 84c-51 13-82 38-99 66M566 84c51 13 82 38 99 66" stroke="#62c9ee" stroke-opacity=".45"/>
+
+    <circle cx="789" cy="143" r="62" stroke="#62c9ee" stroke-opacity=".2"/><circle cx="789" cy="143" r="38" stroke="#d6ae68" stroke-opacity=".3" stroke-dasharray="5 8"/><path d="M789 143 747 119M789 143l33-40M789 143l35 37" stroke="#8293a6" stroke-opacity=".4"/><g fill="#63cbee"><circle cx="747" cy="119" r="4"/><circle cx="822" cy="103" r="4"/></g><circle cx="824" cy="180" r="4" fill="#d5ad68"/>
+    <path d="M101 169h228" stroke="url(#cyan)" stroke-opacity=".45"/><path d="M101 190h155" stroke="url(#gold)" stroke-opacity=".4"/>
+  </g>
+</svg>
